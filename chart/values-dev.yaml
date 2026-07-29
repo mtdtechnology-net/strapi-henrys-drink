@@ -1,0 +1,28 @@
+# Environment-specific values for DEV.
+
+image:
+  pullPolicy: IfNotPresent
+  tag: "2.1.25"
+
+secrets:
+  create: false
+  name: "strapi-runtime-env"
+
+ingress:
+  enabled: true
+  className: nginx
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "300"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "300"
+    nginx.ingress.kubernetes.io/proxy-buffer-size: "128k"
+  hosts:
+    - host: henrys-drinks-admin-panel.dev.digitalbarn.de
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: strapi-dev-tls
+      hosts:
+        - henrys-drinks-admin-panel.dev.digitalbarn.de

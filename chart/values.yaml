@@ -1,0 +1,99 @@
+replicaCount: 1
+
+image:
+  repository: ghcr.io/mtdtechnology-net/strapi-henrys-drink
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+imagePullSecrets: []
+  # - name: ghcr-pull-secret
+
+imageCredentials:
+  create: false
+  registry: ghcr.io
+  username: ""
+  password: ""
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  create: true
+  annotations: {}
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+
+securityContext:
+  allowPrivilegeEscalation: false
+  runAsNonRoot: true
+  runAsUser: 1001
+  runAsGroup: 1001
+
+service:
+  type: ClusterIP
+  port: 3000
+
+healthCheck:
+  livenessPath: /
+  readinessPath: /api/auth/session
+  initialDelaySeconds: 15
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 6
+
+env:
+  DATABASE_CLIENT: "postgres"
+  DATABASE_FILENAME: ".tmp/data.db"
+  DATABASE_SSL: true
+  DATABASE_SSL_REJECT_UNAUTHORIZED: false
+  HOST: "0.0.0.0"
+
+secrets:
+  # Recommended: keep runtime secrets outside this chart, managed by
+  # External Secrets, Sealed Secrets, or a manually created Kubernetes Secret.
+  create: false
+  # Existing secret consumed by the Deployment when create=false.
+  name: "strapi-runtime-env"
+  data:
+    # Used only when secrets.create=true. Do not commit real values here.
+    ADMIN_JWT_SECRET: ""
+    API_TOKEN_SALT: ""
+    APP_KEYS: ""
+    DATABASE_URL: ""
+    ENCRYPTION_KEY: ""
+    JWT_SECRET: ""
+    TRANSFER_TOKEN_SALT: ""
+
+envFrom: []
+  # - secretRef:
+  #     name: strapi-external-env
+
+ingress:
+  enabled: false
+  className: nginx
+  annotations: {}
+  hosts: []
+  tls: []
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
