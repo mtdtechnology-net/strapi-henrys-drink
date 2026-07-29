@@ -30,8 +30,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build --if-present
+      - name: Validate Strapi commands
+        run: |
+          npm run develop --if-present -- --help
+          npm run start --if-present -- --help
+
+      - name: Build Strapi admin panel
+        run: npm run build
+
+      - name: Verify deployment command
+        run: |
+          if npm run | grep -q "deploy"; then
+            echo "Strapi deployment command available"
+          else
+            echo "No deployment script configured"
+          fi
 
       - name: Extract branch name
         if: always()
