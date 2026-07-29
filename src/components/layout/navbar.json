@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_navbars",
+  "info": {
+    "displayName": "Navbar",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "nightlife_pages",
+  "info": {
+    "singularName": "nightlife-page",
+    "pluralName": "nightlife-pages",
+    "displayName": "NightlifePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {}
+}

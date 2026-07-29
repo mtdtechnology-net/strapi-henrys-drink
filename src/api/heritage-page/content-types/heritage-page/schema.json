@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "heritage_pages",
+  "info": {
+    "singularName": "heritage-page",
+    "pluralName": "heritage-pages",
+    "displayName": "HeritagePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.hero-section",
+      "repeatable": false
+    },
+    "familyHistorySection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.family-history-section",
+      "repeatable": false
+    }
+  }
+}
