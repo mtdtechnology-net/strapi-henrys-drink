@@ -5,11 +5,7 @@ on:
     branches:
       - main
       - develop
-      - add-ci-cd-config
       - "feature/**"
-
-  release:
-    types: [published]
 
   workflow_dispatch:
     inputs:
