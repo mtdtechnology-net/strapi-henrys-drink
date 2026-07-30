@@ -29,20 +29,12 @@ podSecurityContext: {}
 securityContext:
   allowPrivilegeEscalation: false
   runAsNonRoot: true
-  runAsUser: 1001
-  runAsGroup: 1001
+  runAsUser: 1000
+  runAsGroup: 1000
 
 service:
   type: ClusterIP
   port: 3000
-
-healthCheck:
-  livenessPath: /
-  readinessPath: /api/auth/session
-  initialDelaySeconds: 15
-  periodSeconds: 10
-  timeoutSeconds: 5
-  failureThreshold: 6
 
 env:
   DATABASE_CLIENT: "postgres"
