@@ -13,3 +13,16 @@ This project adheres to [Semantic Versioning](https://semver.org/). The format i
 ### Fixed
 
 ---
+
+## [0.0.2] - 2026-07-30
+
+### Added
+
+### Changed
+
+### Fixed
+
+---
+
+[Unreleased]: https://github.com/mtdtechnology-net/strapi-henrys-drink/compare/0.0.2...HEAD
+[0.0.2]: https://github.com/mtdtechnology-net/strapi-henrys-drink/compare/0.0.1...0.0.2
