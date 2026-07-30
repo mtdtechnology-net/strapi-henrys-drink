@@ -242,6 +242,92 @@ jobs:
           git config user.name "${RELEASE_BOT_NAME:-github-actions[bot]}"
           git config user.email "${RELEASE_BOT_EMAIL:-github-actions[bot]@users.noreply.github.com}"
 
+      - name: Verify token permissions
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_BOT_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          ACTOR="$(gh api user --jq '.login')"
+          CAN_PUSH="$(gh api "repos/${GITHUB_REPOSITORY}" --jq '.permissions.push // false')"
+
+          if [ "$CAN_PUSH" != "true" ]; then
+            echo "::error::Token authenticates as ${ACTOR}, but does not have push access to ${GITHUB_REPOSITORY}."
+            exit 1
+          fi
+
+          echo "Token authenticates as ${ACTOR} and has repository push permission."
+
+      - name: Update changelog for release
+        env:
+          VERSION: ${{ needs.version.outputs.version }}
+        run: |
+          PREVIOUS_TAG=$(git describe --tags --match "[0-9]*.[0-9]*.[0-9]*" --abbrev=0 2>/dev/null || true)
+          RELEASE_DATE=$(date -u +%F)
+          export PREVIOUS_TAG RELEASE_DATE
+
+          ruby <<'RUBY'
+          path = "CHANGELOG.md"
+          version = ENV.fetch("VERSION")
+          tag = version
+          previous_tag = ENV.fetch("PREVIOUS_TAG", "")
+          release_date = ENV.fetch("RELEASE_DATE")
+          base_url = "https://github.com/#{ENV.fetch("GITHUB_REPOSITORY")}"
+          text = File.read(path)
+
+          unless text.match?(/^## \[Unreleased\]$/)
+            warn "CHANGELOG.md must contain a top-level ## [Unreleased] section."
+            exit 1
+          end
+
+          release_heading = "## [#{version}] - #{release_date}"
+          replacement = [
+            "## [Unreleased]", "", "### Added", "", "### Changed", "",
+            "### Fixed", "", "---", "", release_heading
+          ].join("\n")
+          text.sub!(/^## \[Unreleased\]$/, replacement)
+
+          unreleased_link = "[Unreleased]: #{base_url}/compare/#{tag}...HEAD"
+          if text.match?(/^\[Unreleased\]: .+$/)
+            text.sub!(/^\[Unreleased\]: .+$/, unreleased_link)
+          else
+            text << "\n#{unreleased_link}\n"
+          end
+
+          release_link = if previous_tag.empty?
+                           "[#{version}]: #{base_url}/releases/tag/#{tag}"
+                         else
+                           "[#{version}]: #{base_url}/compare/#{previous_tag}...#{tag}"
+                         end
+
+          if text.match?(/^\[[0-9]+\.[0-9]+\.[0-9]+\]: /)
+            text.sub!(/^(\[[0-9]+\.[0-9]+\.[0-9]+\]: .+)$/, "#{release_link}\n\\1")
+          else
+            text << "#{release_link}\n"
+          end
+
+          File.write(path, text)
+          RUBY
+
+      - name: Commit changelog
+        env:
+          VERSION: ${{ needs.version.outputs.version }}
+        run: |
+          git add CHANGELOG.md
+          git diff --staged --quiet || git commit -m "chore(release): ${VERSION} [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Write release notes
+        env:
+          VERSION: ${{ needs.version.outputs.version }}
+        run: |
+          ruby <<'RUBY'
+          version = ENV.fetch("VERSION")
+          text = File.read("CHANGELOG.md")
+          pattern = /^## \[#{Regexp.escape(version)}\] - [^\n]+\n(?<body>.*?)(?:\n---\n|\n\[[^\n]+\]: )/m
+          notes = text.match(pattern)&.named_captures&.fetch("body", nil)&.strip
+          notes = "Release #{version}" if notes.nil? || notes.empty?
+          File.write(File.join(ENV.fetch("RUNNER_TEMP"), "release-notes.md"), "#{notes}\n")
+          RUBY
+      
       - name: Create and push tag
         env:
           VERSION: ${{ needs.version.outputs.version }}
