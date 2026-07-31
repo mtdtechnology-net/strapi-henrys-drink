@@ -39,7 +39,6 @@ service:
 env:
   DATABASE_CLIENT: "postgres"
   DATABASE_FILENAME: ".tmp/data.db"
-  DATABASE_SSL: true
   DATABASE_SSL_REJECT_UNAUTHORIZED: false
   HOST: "0.0.0.0"
 
@@ -55,6 +54,7 @@ secrets:
     API_TOKEN_SALT: ""
     APP_KEYS: ""
     DATABASE_URL: ""
+    DATABASE_SSL: ""
     ENCRYPTION_KEY: ""
     JWT_SECRET: ""
     TRANSFER_TOKEN_SALT: ""
