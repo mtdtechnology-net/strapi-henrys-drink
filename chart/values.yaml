@@ -34,7 +34,7 @@ securityContext:
 
 service:
   type: ClusterIP
-  port: 3000
+  port: 1337
 
 env:
   DATABASE_CLIENT: "postgres"
