@@ -2,7 +2,7 @@
 
 image:
   pullPolicy: IfNotPresent
-  tag: "0.0.9"
+  tag: "0.0.10"
 
 secrets:
   create: false
