@@ -14,6 +14,16 @@ This project adheres to [Semantic Versioning](https://semver.org/). The format i
 
 ---
 
+## [0.0.11] - 2026-08-07
+
+### Added
+
+### Changed
+
+### Fixed
+
+---
+
 ## [0.0.10] - 2026-08-05
 
 ### Added
@@ -104,7 +114,8 @@ This project adheres to [Semantic Versioning](https://semver.org/). The format i
 
 ---
 
-[Unreleased]: https://github.com/mtdtechnology-net/strapi-henrys-drink/compare/0.0.10...HEAD
+[Unreleased]: https://github.com/mtdtechnology-net/strapi-henrys-drink/compare/0.0.11...HEAD
+[0.0.11]: https://github.com/mtdtechnology-net/strapi-henrys-drink/compare/0.0.10...0.0.11
 [0.0.10]: https://github.com/mtdtechnology-net/strapi-henrys-drink/compare/0.0.9...0.0.10
 [0.0.9]: https://github.com/mtdtechnology-net/strapi-henrys-drink/compare/0.0.8...0.0.9
 [0.0.8]: https://github.com/mtdtechnology-net/strapi-henrys-drink/compare/0.0.7...0.0.8
