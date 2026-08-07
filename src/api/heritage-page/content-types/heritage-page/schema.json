@@ -34,6 +34,46 @@
       },
       "component": "sections.family-history-section",
       "repeatable": false
+    },
+    "identitySection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.identity-section",
+      "repeatable": false
+    },
+    "craftedSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.crafted-section",
+      "repeatable": false
+    },
+    "morethanadrinkSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.more-than-a-drink-section",
+      "repeatable": false
+    },
+    "enterthenightSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.enter-the-night-section",
+      "repeatable": false
     }
   }
 }

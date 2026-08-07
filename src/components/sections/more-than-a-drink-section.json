@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_more_than_a_drink_sections",
+  "info": {
+    "displayName": "MoreThanADrinkSection",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "MoreThanADrinkTitle": {
+      "type": "string"
+    },
+    "MoreThanADrinkParagraph1": {
+      "type": "text"
+    },
+    "MoreThanADrinkParagraph2": {
+      "type": "text"
+    },
+    "MoreThanADrinkParagraph3": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

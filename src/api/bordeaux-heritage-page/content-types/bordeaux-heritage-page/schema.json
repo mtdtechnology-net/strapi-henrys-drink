@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "bordeaux_heritage_pages",
+  "info": {
+    "singularName": "bordeaux-heritage-page",
+    "pluralName": "bordeaux-heritage-pages",
+    "displayName": "BordeauxHeritagePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "BordeauxTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "BordeauxDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "BordeauxTextButton": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

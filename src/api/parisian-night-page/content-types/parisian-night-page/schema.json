@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "parisian_night_pages",
+  "info": {
+    "singularName": "parisian-night-page",
+    "pluralName": "parisian-night-pages",
+    "displayName": "ParisianNightPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "ParisianTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ParisianDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ParisianTextButton": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

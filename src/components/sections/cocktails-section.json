@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_cocktails_sections",
+  "info": {
+    "displayName": "CocktailsSection",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "CocktailCornerTitle": {
+      "type": "string"
+    },
+    "CocktailName": {
+      "type": "string"
+    },
+    "CocktailDescription": {
+      "type": "text"
+    },
+    "CocktailTagline": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

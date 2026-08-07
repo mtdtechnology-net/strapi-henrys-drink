@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_shared_sections",
+  "info": {
+    "displayName": "SharedSection",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "SharedTitle": {
+      "type": "string"
+    },
+    "SharedSubtitle": {
+      "type": "string"
+    },
+    "SharedParagraph1": {
+      "type": "text"
+    },
+    "SharedParagraph2": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

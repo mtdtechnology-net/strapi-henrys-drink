@@ -3,7 +3,7 @@ import type { Core } from '@strapi/strapi';
 import { isDatabaseClientKind } from '@strapi/database';
 
 const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Database => {
-  const client = env('DATABASE_CLIENT', 'sqlite');
+  const client = env('DATABASE_CLIENT', '${DATABASE_CLIENT}');
 
   if (!isDatabaseClientKind(client)) {
     throw new Error(
@@ -35,11 +35,11 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Database 
       client: 'postgres',
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', 'localhost'),
+        host: env('DATABASE_HOST', '${DATABASE_HOST}'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'strapi'),
-        user: env('DATABASE_USERNAME', 'strapi'),
-        password: env('DATABASE_PASSWORD', 'strapi'),
+        database: env('DATABASE_NAME', '${DATABASE_NAME}'),
+        user: env('DATABASE_USERNAME', '${DATABASE_USERNAME}'),
+        password: env('DATABASE_PASSWORD', '${DATABASE_PASSWORD}'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
