@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_enter_the_night_sections",
+  "info": {
+    "displayName": "EnterTheNightSection",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "EnterTheNightTitle": {
+      "type": "string"
+    },
+    "EnterTheNightDescription": {
+      "type": "text"
+    },
+    "EnterTheNightButton": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

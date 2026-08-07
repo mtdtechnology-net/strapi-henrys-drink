@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_night_comes_alive_sections",
+  "info": {
+    "displayName": "NightComesAliveSection",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "NightTitle": {
+      "type": "string"
+    },
+    "NightDescription": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

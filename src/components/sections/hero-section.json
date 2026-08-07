@@ -5,6 +5,13 @@
     "icon": "star"
   },
   "options": {},
-  "attributes": {},
+  "attributes": {
+    "HeroTitle": {
+      "type": "string"
+    },
+    "HeroDescription": {
+      "type": "text"
+    }
+  },
   "config": {}
 }

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_different_rhythm_sections",
+  "info": {
+    "displayName": "DifferentRhythmSection",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "RhythmTitle": {
+      "type": "string"
+    },
+    "RhythmParagraph1": {
+      "type": "text"
+    },
+    "RhythmParagraph2": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

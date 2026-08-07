@@ -14,5 +14,56 @@
       "localized": true
     }
   },
-  "attributes": {}
+  "attributes": {
+    "nightcomesaliveSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.night-comes-alive-section",
+      "repeatable": false
+    },
+    "differentrhythmSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.different-rhythm-section",
+      "repeatable": false
+    },
+    "cocktailsSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.cocktails-section",
+      "repeatable": false
+    },
+    "sharedSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.shared-section",
+      "repeatable": false
+    },
+    "meetthemanSection": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.meet-the-man-section",
+      "repeatable": false
+    }
+  }
 }

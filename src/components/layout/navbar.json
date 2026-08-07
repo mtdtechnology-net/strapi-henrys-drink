@@ -15,6 +15,18 @@
         "videos",
         "audios"
       ]
+    },
+    "NavbarOurStory": {
+      "type": "string"
+    },
+    "NavbarFrenchVermouth": {
+      "type": "string"
+    },
+    "NavbarCocktails": {
+      "type": "string"
+    },
+    "NavbarContact": {
+      "type": "string"
     }
   },
   "config": {}

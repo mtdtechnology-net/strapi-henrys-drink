@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_identity_sections",
+  "info": {
+    "displayName": "IdentitySection",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "IdentityTitle": {
+      "type": "string"
+    },
+    "IdentitySubtitle": {
+      "type": "string"
+    },
+    "IdentityParagraph1": {
+      "type": "text"
+    },
+    "IdentityParagraph2": {
+      "type": "text"
+    },
+    "IdentityParagraph3": {
+      "type": "text"
+    },
+    "IdentityParagraph4": {
+      "type": "text"
+    },
+    "IdentityTextButton": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

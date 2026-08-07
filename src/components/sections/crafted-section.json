@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_crafted_sections",
+  "info": {
+    "displayName": "CraftedSection",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "CraftedTitle": {
+      "type": "string"
+    },
+    "CraftedParagraph1": {
+      "type": "text"
+    },
+    "CraftedParagraph2": {
+      "type": "text"
+    },
+    "CraftedParagraph3": {
+      "type": "text"
+    },
+    "CraftedParagraph4": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

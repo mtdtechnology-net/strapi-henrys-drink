@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_layout_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "FooterContactTitle": {
+      "type": "string"
+    },
+    "FooterContactHours": {
+      "type": "string"
+    },
+    "FooterPoliciesTitle": {
+      "type": "string"
+    },
+    "FooterTermsConditions": {
+      "type": "string"
+    },
+    "FooterPrivacyPolicy": {
+      "type": "string"
+    },
+    "FooterRefundPolicy": {
+      "type": "string"
+    },
+    "FooterShippingDelivery": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
