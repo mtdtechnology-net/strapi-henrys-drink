@@ -9,6 +9,9 @@
     "FooterContactTitle": {
       "type": "string"
     },
+    "FooterContactDays": {
+      "type": "string"
+    },
     "FooterContactHours": {
       "type": "string"
     },
