@@ -39,6 +39,14 @@
         }
       }
     },
+    "ProductPrice": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "AddProductButton": {
       "type": "string",
       "pluginOptions": {
@@ -111,6 +119,22 @@
         }
       }
     },
+    "FinishSubtitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "FinishDescription": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "DetailsTitle": {
       "type": "string",
       "pluginOptions": {
@@ -152,6 +176,14 @@
       }
     },
     "ServingTemperatureSubtitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ServingTemperatureNumbers": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

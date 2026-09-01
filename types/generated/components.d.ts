@@ -7,6 +7,7 @@ export interface LayoutFooter extends Struct.ComponentSchema {
     icon: 'attachment';
   };
   attributes: {
+    FooterContactDays: Schema.Attribute.String;
     FooterContactHours: Schema.Attribute.String;
     FooterContactTitle: Schema.Attribute.String;
     FooterPoliciesTitle: Schema.Attribute.String;
@@ -40,9 +41,39 @@ export interface SectionsCocktailsSection extends Struct.ComponentSchema {
   };
   attributes: {
     CocktailCornerTitle: Schema.Attribute.String;
-    CocktailDescription: Schema.Attribute.Text;
-    CocktailName: Schema.Attribute.String;
-    CocktailTagline: Schema.Attribute.Text;
+    CocktailDescription1: Schema.Attribute.Text;
+    CocktailDescription10: Schema.Attribute.String;
+    CocktailDescription11: Schema.Attribute.String;
+    CocktailDescription2: Schema.Attribute.String;
+    CocktailDescription3: Schema.Attribute.String;
+    CocktailDescription4: Schema.Attribute.String;
+    CocktailDescription5: Schema.Attribute.String;
+    CocktailDescription6: Schema.Attribute.String;
+    CocktailDescription7: Schema.Attribute.String;
+    CocktailDescription8: Schema.Attribute.String;
+    CocktailDescription9: Schema.Attribute.String;
+    CocktailName1: Schema.Attribute.String;
+    CocktailName10: Schema.Attribute.String;
+    CocktailName11: Schema.Attribute.String;
+    CocktailName2: Schema.Attribute.String;
+    CocktailName3: Schema.Attribute.String;
+    CocktailName4: Schema.Attribute.String;
+    CocktailName5: Schema.Attribute.String;
+    CocktailName6: Schema.Attribute.String;
+    CocktailName7: Schema.Attribute.String;
+    CocktailName8: Schema.Attribute.String;
+    CocktailName9: Schema.Attribute.String;
+    CocktailTagline1: Schema.Attribute.Text;
+    CocktailTagline10: Schema.Attribute.String;
+    CocktailTagline11: Schema.Attribute.String;
+    CocktailTagline2: Schema.Attribute.String;
+    CocktailTagline3: Schema.Attribute.String;
+    CocktailTagline4: Schema.Attribute.String;
+    CocktailTagline5: Schema.Attribute.String;
+    CocktailTagline6: Schema.Attribute.String;
+    CocktailTagline7: Schema.Attribute.String;
+    CocktailTagline8: Schema.Attribute.String;
+    CocktailTagline9: Schema.Attribute.String;
   };
 }
 
