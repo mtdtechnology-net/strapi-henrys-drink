@@ -816,6 +816,12 @@ export interface ApiContactFormConfirmationEmailContactFormConfirmationEmail
           localized: true;
         };
       }>;
+    EmailFooterContactAddress: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     EmailFooterOperatingHours: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -850,7 +856,7 @@ export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
     };
   };
   attributes: {
-    ContactCompayName: Schema.Attribute.String &
+    ContactCompanyName: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1155,6 +1161,12 @@ export interface ApiOrderConfirmationEmailOrderConfirmationEmail
           localized: true;
         };
       }>;
+    EmailFooterContactAddress: Schema.Attribute.String &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     EmailFooterOperatingHours: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
@@ -1398,13 +1410,13 @@ export interface ApiPrivacyPolicyPagePrivacyPolicyPage
           localized: true;
         };
       }>;
-    PrivacyPolicyDecription2: Schema.Attribute.Text &
+    PrivacyPolicyDescription1: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    PrivacyPolicyDescription1: Schema.Attribute.Text &
+    PrivacyPolicyDescription2: Schema.Attribute.Text &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

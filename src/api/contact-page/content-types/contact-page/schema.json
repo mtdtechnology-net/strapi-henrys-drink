@@ -63,7 +63,7 @@
         }
       }
     },
-    "ContactCompayName": {
+    "ContactCompanyName": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

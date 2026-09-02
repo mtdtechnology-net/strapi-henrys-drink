@@ -6,7 +6,30 @@
   },
   "options": {},
   "attributes": {
+    "LogoLightTheme": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "LogoDarkTheme": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "FooterContactTitle": {
+      "type": "string"
+    },
+    "FooterEmailAddress": {
       "type": "string"
     },
     "FooterContactDays": {

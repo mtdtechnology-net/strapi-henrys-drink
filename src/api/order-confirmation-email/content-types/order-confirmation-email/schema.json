@@ -110,6 +110,14 @@
           "localized": true
         }
       }
+    },
+    "EmailFooterContactAddress": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
