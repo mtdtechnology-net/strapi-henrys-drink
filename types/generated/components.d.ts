@@ -42,16 +42,16 @@ export interface SectionsCocktailsSection extends Struct.ComponentSchema {
   attributes: {
     CocktailCornerTitle: Schema.Attribute.String;
     CocktailDescription1: Schema.Attribute.Text;
-    CocktailDescription10: Schema.Attribute.String;
-    CocktailDescription11: Schema.Attribute.String;
-    CocktailDescription2: Schema.Attribute.String;
-    CocktailDescription3: Schema.Attribute.String;
-    CocktailDescription4: Schema.Attribute.String;
-    CocktailDescription5: Schema.Attribute.String;
-    CocktailDescription6: Schema.Attribute.String;
-    CocktailDescription7: Schema.Attribute.String;
-    CocktailDescription8: Schema.Attribute.String;
-    CocktailDescription9: Schema.Attribute.String;
+    CocktailDescription10: Schema.Attribute.Text;
+    CocktailDescription11: Schema.Attribute.Text;
+    CocktailDescription2: Schema.Attribute.Text;
+    CocktailDescription3: Schema.Attribute.Text;
+    CocktailDescription4: Schema.Attribute.Text;
+    CocktailDescription5: Schema.Attribute.Text;
+    CocktailDescription6: Schema.Attribute.Text;
+    CocktailDescription7: Schema.Attribute.Text;
+    CocktailDescription8: Schema.Attribute.Text;
+    CocktailDescription9: Schema.Attribute.Text;
     CocktailName1: Schema.Attribute.String;
     CocktailName10: Schema.Attribute.String;
     CocktailName11: Schema.Attribute.String;
