@@ -9,104 +9,104 @@
     "CocktailCornerTitle": {
       "type": "string"
     },
+    "CocktailTagline1": {
+      "type": "text"
+    },
     "CocktailName1": {
       "type": "string"
     },
     "CocktailDescription1": {
       "type": "text"
     },
-    "CocktailTagline1": {
-      "type": "text"
+    "CocktailTagline2": {
+      "type": "string"
     },
     "CocktailName2": {
       "type": "string"
     },
     "CocktailDescription2": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline2": {
+    "CocktailTagline3": {
       "type": "string"
     },
     "CocktailName3": {
       "type": "string"
     },
     "CocktailDescription3": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline3": {
+    "CocktailTagline4": {
       "type": "string"
     },
     "CocktailName4": {
       "type": "string"
     },
     "CocktailDescription4": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline4": {
+    "CocktailTagline5": {
       "type": "string"
     },
     "CocktailName5": {
       "type": "string"
     },
     "CocktailDescription5": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline5": {
+    "CocktailTagline6": {
       "type": "string"
     },
     "CocktailName6": {
       "type": "string"
     },
     "CocktailDescription6": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline6": {
+    "CocktailTagline7": {
       "type": "string"
     },
     "CocktailName7": {
       "type": "string"
     },
     "CocktailDescription7": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline7": {
+    "CocktailTagline8": {
       "type": "string"
     },
     "CocktailName8": {
       "type": "string"
     },
     "CocktailDescription8": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline8": {
+    "CocktailTagline9": {
       "type": "string"
     },
     "CocktailName9": {
       "type": "string"
     },
     "CocktailDescription9": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline9": {
+    "CocktailTagline10": {
       "type": "string"
     },
     "CocktailName10": {
       "type": "string"
     },
     "CocktailDescription10": {
-      "type": "string"
+      "type": "text"
     },
-    "CocktailTagline10": {
+    "CocktailTagline11": {
       "type": "string"
     },
     "CocktailName11": {
       "type": "string"
     },
     "CocktailDescription11": {
-      "type": "string"
-    },
-    "CocktailTagline11": {
-      "type": "string"
+      "type": "text"
     }
   },
   "config": {}
