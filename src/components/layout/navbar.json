@@ -6,7 +6,17 @@
   },
   "options": {},
   "attributes": {
-    "Logo": {
+    "LogoLightTheme": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "LogoDarkTheme": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

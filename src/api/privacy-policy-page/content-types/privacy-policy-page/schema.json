@@ -39,7 +39,7 @@
         }
       }
     },
-    "PrivacyPolicyDecription2": {
+    "PrivacyPolicyDescription2": {
       "type": "text",
       "pluginOptions": {
         "i18n": {

@@ -10,11 +10,18 @@ export interface LayoutFooter extends Struct.ComponentSchema {
     FooterContactDays: Schema.Attribute.String;
     FooterContactHours: Schema.Attribute.String;
     FooterContactTitle: Schema.Attribute.String;
+    FooterEmailAddress: Schema.Attribute.String;
     FooterPoliciesTitle: Schema.Attribute.String;
     FooterPrivacyPolicy: Schema.Attribute.String;
     FooterRefundPolicy: Schema.Attribute.String;
     FooterShippingDelivery: Schema.Attribute.String;
     FooterTermsConditions: Schema.Attribute.String;
+    LogoDarkTheme: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    LogoLightTheme: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
   };
 }
 
@@ -25,7 +32,12 @@ export interface LayoutNavbar extends Struct.ComponentSchema {
     icon: 'bulletList';
   };
   attributes: {
-    Logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    LogoDarkTheme: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    LogoLightTheme: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     NavbarCocktails: Schema.Attribute.String;
     NavbarContact: Schema.Attribute.String;
     NavbarFrenchVermouth: Schema.Attribute.String;
