@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "checkout_pages",
+  "collectionName": "order_confirmed_pages",
   "info": {
-    "singularName": "checkout-page",
-    "pluralName": "checkout-pages",
-    "displayName": "CheckoutPage"
+    "singularName": "order-confirmed-page",
+    "pluralName": "order-confirmed-pages",
+    "displayName": "OrderConfirmedPage"
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +15,7 @@
     }
   },
   "attributes": {
-    "CheckoutTitle": {
+    "VerifyingTitle": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -23,31 +23,7 @@
         }
       }
     },
-    "CheckoutDeliveryDetailsSubtitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutFirstName": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutLastName": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutAddress": {
+    "VerifyingDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -55,7 +31,15 @@
         }
       }
     },
-    "CheckoutAddressLine2": {
+    "OrderConfirmedTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "OrderConfirmedDescription": {
       "type": "text",
       "pluginOptions": {
         "i18n": {
@@ -63,112 +47,72 @@
         }
       }
     },
-    "CheckoutPostalCode": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutCity": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutCountry": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutEmail": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutPhoneNumber": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutSummaryTitle": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutProductName": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutProductDetails": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutSubtotal": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutShipping": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutTotal": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutConfirmOrderButton": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "CheckoutSecurePayment": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "EmptyCartText": {
+    "OrderReferenceText": {
       "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "EmailSentText": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "NoPaymentTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "NoPaymentDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "VerificationErrorTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "PaymentCancelledTitle": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "PaymentCancelledDescription": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ReturnToShopButton": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "ReturnToCartButton": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
